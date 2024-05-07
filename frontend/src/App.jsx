@@ -45,16 +45,16 @@ const App = () => {
         <Route index element={<ProtectedRoute><HeroSection/></ProtectedRoute>}/>
         <Route path='/home' element={<Home/>}/>
         <Route path='/userPage' element={<HeroSection/>}/>
-        <Route path="/features" element={<Features />} />
-        <Route path="/benefit" element={<Benefit />} />
-        <Route path="/courses" element={<Courses />} />
+        <Route path="/features" element={<ProtectedRoute><Features /></ProtectedRoute>} />
+        <Route path="/benefit" element={<ProtectedRoute><Benefit /></ProtectedRoute>} />
+        <Route path="/courses" element={<ProtectedRoute><Courses /></ProtectedRoute>} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/aboutUs" element={<AboutUs />} />
-        <Route path="/board/dashboard" element={<Dashboard />} />
-        <Route path="/board/discover" element={<Discover />} />
-        <Route path="/board/rewards" element={<Rewards />} />
+        <Route path="/aboutUs" element={<ProtectedRoute><AboutUs /></ProtectedRoute>} />
+        <Route path="/board/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
+        <Route path="/board/discover" element={<ProtectedRoute><Discover /></ProtectedRoute>} />
+        <Route path="/board/rewards" element={<ProtectedRoute><Rewards /></ProtectedRoute>} />
         {/* <Route path="/celo" element={<Celo />} /> */}
         <Route path='/arbitrum' element={<Arbitrum/>}/>
         <Route path='/lisk' element={<Lisk/>}/>
