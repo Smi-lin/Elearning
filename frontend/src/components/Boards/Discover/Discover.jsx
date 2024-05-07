@@ -7,22 +7,18 @@ import {
   Flex,
   Grid,
   GridItem,
-  
 } from "@chakra-ui/react";
-import { useNavigate } from 'react-router-dom';
-import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Discover = () => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/arbitrum")
+    navigate("/arbitrum");
   };
 
   const doubleClick = () => {
-    navigate("/lisk")
-  }
-
-  
+    navigate("/lisk");
+  };
 
   return (
     <Box className="discover">
@@ -37,7 +33,7 @@ const Discover = () => {
           className="supreme-container"
           marginTop="20px"
           bgColor="#f4f4f9"
-          height="69vh"
+          height="60vh"
           width="30vw"
           letterSpacing="1px"
           padding="1.5rem 2rem"
@@ -45,21 +41,31 @@ const Discover = () => {
           borderRadius="10px"
           boxShadow="0 2px 4px rgba(0, 0, 0, 0.1)"
         >
-          <Heading as="h2" fontSize="2.5rem" marginTop="5px">
+          <Heading
+            as="h2"
+            fontSize="2.7rem"
+            marginTop="5px"
+            textAlign="center"
+            marginBottom="2rem"
+          >
             Arbitrum
           </Heading>
           <Text>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
-
-            <div>
-      
-    </div>
+            Arbitrum is a layer 2 solution designed to improve the capabilities
+            of Ethereum smart contracts — boosting their speed and scalability,
+            while adding in additional privacy features to boot. The platform is
+            designed to allow developers to easily run unmodified Ethereum
+            Virtual Machine (EVM) contracts and Ethereum transactions on a
+            second layer, while still benefiting from Ethereum's excellent layer
+            1 security.
+            
           </Text>
-          <Button className="more" onClick={handleClick} marginLeft="12rem">
+          <Button
+            className="more"
+            onClick={handleClick}
+            marginLeft="10rem"
+            marginTop="3rem"
+          >
             Learn more
           </Button>
         </GridItem>
@@ -68,7 +74,7 @@ const Discover = () => {
           className="supreme-container"
           marginTop="20px"
           bgColor="#f4f4f9"
-          height="69vh"
+          height="60vh"
           width="30vw"
           letterSpacing="1px"
           padding="1.5rem 2rem"
@@ -76,17 +82,29 @@ const Discover = () => {
           borderRadius="10px"
           boxShadow="0 2px 4px rgba(0, 0, 0, 0.1)"
         >
-          <Heading as="h2" fontSize="2.5rem" marginTop="5px">
-           About Arbitrum
+          <Heading
+            as="h2"
+            fontSize="2.7rem"
+            marginTop="5px"
+            textAlign="center"
+            marginBottom="2rem"
+          >
+            Lisk
           </Heading>
           <Text>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
+            Lisk is an open-source web3 application platform that is designed
+            for interoperability with sidechains. It's Javascript SDK gives
+            developers a straightforward path into launching their own Lisk
+            compatible blockchains. The native cryptocurrency for the Lisk
+            blockchain is the LSK token and it's network achieves consensus
+            using Delegated Proof of Stake. including Lisk Core, Lisk Service.
           </Text>
-          <Button className="more" onClick={doubleClick} marginLeft="12rem">
+          <Button
+            className="more"
+            onClick={doubleClick}
+            marginLeft="10rem"
+            marginTop="3rem"
+          >
             Learn more
           </Button>
         </GridItem>
@@ -95,7 +113,7 @@ const Discover = () => {
           className="supreme-container"
           marginTop="20px"
           bgColor="#f4f4f9"
-          height="69vh"
+          height="60vh"
           width="30vw"
           letterSpacing="1px"
           padding="1.5rem 2rem"
@@ -103,17 +121,26 @@ const Discover = () => {
           borderRadius="10px"
           boxShadow="0 2px 4px rgba(0, 0, 0, 0.1)"
         >
-          <Heading as="h2" fontSize="2.5rem" marginTop="5px">
-            Supreme Small Chops
+          <Heading
+            as="h2"
+            fontSize="2.5rem"
+            marginTop="5px"
+            textAlign="center"
+            marginBottom="2rem"
+          >
+            Celo
           </Heading>
           <Text>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
+            Celo is a payments platform attempting to make crypto payments as
+            easy as possible to support communities around the world who are
+            still left without critical financial services. Instead of having to
+            manage complex crypto addresses, users can send cryptocurrencies
+            using mobile phone numbers. CELO is a proof-of-stake (PoS) token
+            used for transaction fees, governance participation and related
+            activities on the Celo network.
           </Text>
-          <Button className="more" onClick={handleClick} marginLeft="12rem">
+          <Button className="more" onClick={handleClick}  marginLeft="10rem"
+            marginTop="2rem">
             Learn more
           </Button>
         </GridItem>
@@ -122,7 +149,7 @@ const Discover = () => {
           className="supreme-container"
           marginTop="20px"
           bgColor="#f4f4f9"
-          height="69vh"
+          height="60vh"
           width="30vw"
           letterSpacing="1px"
           padding="1.5rem 2rem"
@@ -130,15 +157,12 @@ const Discover = () => {
           borderRadius="10px"
           boxShadow="0 2px 4px rgba(0, 0, 0, 0.1)"
         >
-          <Heading as="h2" fontSize="2.5rem" marginTop="5px">
-            Supreme Small Chops
+          <Heading as="h2" fontSize="2.5rem" marginTop="5px" textAlign="center"
+            marginBottom="2rem">
+            DLT Africa
           </Heading>
           <Text>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English.
+          DLT Africa is there to give you a comprehensive guide on setting up your own coding environment. Whether you're a beginner or seasoned developer, having the right tools and environment is crucial for success.DLT Africa aims to support web3 innovation across Africa by training more web3 devs, product managers, marketing professionals and support through Hackathons, incubation programs and open demo days.
           </Text>
           <Button className="more" onClick={handleClick} marginLeft="12rem">
             Learn more
@@ -189,7 +213,7 @@ const Discover = () => {
         >
           <Heading as="h5">Payroll</Heading>
         </Box>
-        
+
         <Box
           className="quick"
           boxShadow="rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px"
